@@ -29,9 +29,8 @@ class Usuario extends \yii\db\ActiveRecord
     {
         return [
             [['username', 'nombre', 'apellido'], 'required'],
-            [['apellido'], 'integer'],
             [['username'], 'string', 'max' => 50],
-            [['nombre'], 'string', 'max' => 100],
+            [['nombre', 'apellido'], 'string', 'max' => 100],
         ];
     }
 
